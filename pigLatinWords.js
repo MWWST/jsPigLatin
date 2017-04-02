@@ -77,7 +77,7 @@ function translate(input)
 		      else if(j>1){
 		       //if the index of the next vowel is greater than 1 then we have a cluster of consinents
 
-		        for (var p=j-1;p>0;p--){
+		        for (var p=1;p<=j-1;p++){
 		        	//we iterate starting at the next vowel and decrement down to 0, adding each consinent to our end string
 		          endString+=input[p]
 		        }
